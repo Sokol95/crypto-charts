@@ -1,18 +1,16 @@
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-/src/api
+# IDE
+/.idea
+
 # testing
 /coverage
 
 # production
 /build
-
-# IDE
-/.idea
 
 # misc
 .DS_Store
