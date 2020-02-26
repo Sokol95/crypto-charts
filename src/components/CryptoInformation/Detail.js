@@ -12,6 +12,6 @@ const Detail = (props) =>{
             </div> 
         </div>
     )
-}
+};
 
 export default Detail;

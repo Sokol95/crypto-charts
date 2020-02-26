@@ -1,11 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getCryptoValue, getCryptoMetadata, getCryptoHistory, clearSelectedCrypto} from '../../actions';
-
 import CryptoChart from './CryptoChart';
 import CryptoDetails from './CryptoDetails';
 import CryptoDescription from './CryptoDescription';
-
 import Loader from '../Loader';
 
 class CryptoInformation extends React.Component {
@@ -67,7 +65,7 @@ class CryptoInformation extends React.Component {
                 </div>
             )
         }
-    }
+    };
 
     renderCryptoChart() {
         if (!this.props.history) {
@@ -129,7 +127,7 @@ const mapStateToProps = (state) => {
         selectedCryptoInformation: state.crypto.selectedCryptoInformation,
         history: state.crypto.history
     }
-}
+};
 
 export default connect(mapStateToProps, {
     getCryptoValue,

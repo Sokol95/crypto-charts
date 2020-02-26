@@ -4,7 +4,7 @@ import {Line} from 'react-chartjs-2';
 import './style/CryptoChart.css';
 import Loader from '../Loader';
 
-class cryptoChart extends React.Component {
+class CryptoChart extends React.Component {
 
     state = {width: window.innerWidth}
 
@@ -99,4 +99,4 @@ class cryptoChart extends React.Component {
 }
 
 
-export default cryptoChart
+export default CryptoChart;

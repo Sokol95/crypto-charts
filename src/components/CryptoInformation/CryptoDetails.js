@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import './style/CryptoDetails.css';
 import Detail from './Detail';
 
-
 class CryptoDetails extends Component{
     render(){
         const {dateAdded, lastUpdated, totalSuply, change1Hour, change24Hours, change7Days} = this.props;
         return(
             <div className="crypto-details">
-                <div className="column-2">
+                <div className="crypto-values">
                     <Detail 
                         name="Date added:"
                         value={dateAdded.split('T')[0]}
@@ -22,7 +21,7 @@ class CryptoDetails extends Component{
                         value={totalSuply}
                     />
                 </div>
-                <div className="column-2">
+                <div className="crypto-values">
                     <Detail 
                         name="Change(1h):"
                         value={change1Hour}

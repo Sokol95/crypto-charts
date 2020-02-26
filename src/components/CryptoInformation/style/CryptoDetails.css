@@ -2,7 +2,18 @@
     width: 100%;
     position: relative;
     display: flex;
-    padding: 10px 30px;
+    padding: 10px 90px;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+.crypto-values{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 50px;
 }
 
 .labeled-center{
@@ -19,4 +30,5 @@
 .crypto-header{
     font-weight: 600;
 }
+
 

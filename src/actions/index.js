@@ -36,7 +36,7 @@ export const getCryptoValue = (id) => {
             payload: cryptoValue.data
         })
     }
-}
+};
 
 export const setCryptoListPage = (page) => {
     return {
