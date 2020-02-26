@@ -5,8 +5,12 @@ import './style/CryptoChart.css';
 import Loader from '../Loader';
 
 class CryptoChart extends React.Component {
-
-    state = {width: window.innerWidth}
+    constructor(props) {
+        super(props);
+        this.state = {
+            width: window.innerWidth
+        }
+    }
 
     componentDidMount() {
         window.addEventListener("resize", this.updateDimensions)
@@ -16,15 +20,15 @@ class CryptoChart extends React.Component {
         this.setState({
             width: window.innerWidth
         })
-    }
+    };
 
     getXaxis = () => {
         let dateArray = [];
         this.props.history.Data.map(date => {
             return dateArray.push(new Date(date.time * 1000).toISOString().slice(0, 10))
-        })
+        });
         return dateArray;
-    }
+    };
 
     getYaxis = () => {
         let priceArray = [];
@@ -32,7 +36,7 @@ class CryptoChart extends React.Component {
             return priceArray.push(element.high);
         });
         return priceArray;
-    }
+    };
 
     renderCryptoChart() {
         if (!this.props.history) {
